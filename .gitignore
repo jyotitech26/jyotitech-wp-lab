@@ -1,0 +1,63 @@
+# Local by Flywheel
+conf/
+logs/
+local-site.json
+
+# Local environment
+*.local
+*.local.json
+
+# WordPress core
+/app/public/wp-admin/
+/app/public/wp-includes/
+
+# WordPress uploads
+/app/public/wp-content/uploads/
+
+# WordPress cache
+/app/public/wp-content/cache/
+/app/public/wp-content/upgrade/
+
+# Debug/log files
+*.log
+debug.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Node
+node_modules/
+
+# Environment files
+.env
+.env.*
+# WordPress core files
+/app/public/wp-admin/
+/app/public/wp-includes/
+/app/public/wp-*.php
+
+# WordPress database
+/app/sql/
+/*.sql
+
+# WordPress default themes
+/app/public/wp-content/themes/twentytwentythree/
+/app/public/wp-content/themes/twentytwentyfour/
+
+# WordPress default plugins
+/app/public/wp-content/plugins/hello.php
+# WordPress default themes
+/app/public/wp-content/themes/twentytwentythree/
+/app/public/wp-content/themes/twentytwentyfour/
+/app/public/wp-content/themes/twentytwentyfive/
+
+# WordPress core
+/app/public/xmlrpc.php/app/.envrc 
+app/.envrc
+/app/public/xmlrpc.php
+/app/public/local-xdebuginfo.php
