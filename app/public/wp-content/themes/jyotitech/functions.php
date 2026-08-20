@@ -14,13 +14,10 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function jyotitech_setup() {
 
-    // Let WordPress manage the document title.
     add_theme_support( 'title-tag' );
 
-    // Enable featured images.
     add_theme_support( 'post-thumbnails' );
 
-    // Enable HTML5 markup.
     add_theme_support(
         'html5',
         array(
@@ -34,10 +31,6 @@ function jyotitech_setup() {
         )
     );
 
-    // Enable custom logo.
-    add_theme_support( 'custom-logo' );
-
-    // Register navigation menu.
     register_nav_menus(
         array(
             'primary' => __( 'Primary Menu', 'jyotitech' ),
@@ -47,7 +40,7 @@ function jyotitech_setup() {
 add_action( 'after_setup_theme', 'jyotitech_setup' );
 
 /**
- * Enqueue theme styles.
+ * Enqueue theme stylesheet.
  */
 function jyotitech_enqueue_styles() {
 
@@ -55,7 +48,7 @@ function jyotitech_enqueue_styles() {
         'jyotitech-style',
         get_stylesheet_uri(),
         array(),
-        wp_get_theme()->get( 'Version' )
+        '1.0.0'
     );
 }
 add_action( 'wp_enqueue_scripts', 'jyotitech_enqueue_styles' );

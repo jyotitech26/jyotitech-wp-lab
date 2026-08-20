@@ -3,16 +3,16 @@ Theme Name: JyotiTech
 Theme URI: https://github.com/jyotitech26/jyotitech-wp-lab
 Author: Jyoti Prakash Chakma
 Author URI: https://github.com/jyotitech26
-Description: A professional custom WordPress theme developed for the JyotiTech WordPress Lab.
+Description: A custom WordPress theme developed for the JyotiTech WordPress Lab.
 Version: 1.0.0
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: jyotitech
 */
 
-/* ========================================
+/* =========================
    Base Styles
-======================================== */
+========================= */
 
 * {
     box-sizing: border-box;
