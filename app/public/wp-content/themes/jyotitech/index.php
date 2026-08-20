@@ -1,18 +1,14 @@
 <?php
 /**
- * Main template file
+ * Main template file.
  *
  * @package JyotiTech
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-    exit;
-}
-
 get_header();
 ?>
 
-<main id="primary" class="site-main">
+<div class="container">
 
     <?php if ( have_posts() ) : ?>
 
@@ -20,12 +16,14 @@ get_header();
 
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-                <header class="entry-header">
-                    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-                </header>
+                <h1 class="entry-title">
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_title(); ?>
+                    </a>
+                </h1>
 
                 <div class="entry-content">
-                    <?php the_content(); ?>
+                    <?php the_excerpt(); ?>
                 </div>
 
             </article>
@@ -34,17 +32,13 @@ get_header();
 
     <?php else : ?>
 
-        <section class="no-results">
-            <h1><?php esc_html_e( 'Nothing Found', 'jyotitech' ); ?></h1>
-
-            <p>
-                <?php esc_html_e( 'No content is available yet.', 'jyotitech' ); ?>
-            </p>
-        </section>
+        <p>
+            <?php esc_html_e( 'No content found.', 'jyotitech' ); ?>
+        </p>
 
     <?php endif; ?>
 
-</main>
+</div>
 
 <?php
 get_footer();

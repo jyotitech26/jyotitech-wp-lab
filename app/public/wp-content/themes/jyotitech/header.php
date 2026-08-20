@@ -1,17 +1,12 @@
 <?php
 /**
- * Header template
+ * The header for JyotiTech theme.
  *
  * @package JyotiTech
  */
-
-if ( ! defined( 'ABSPATH' ) ) {
-    exit;
-}
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,8 +46,8 @@ if ( ! defined( 'ABSPATH' ) ) {
             wp_nav_menu(
                 array(
                     'theme_location' => 'primary',
-                    'fallback_cb'    => false,
                     'container'      => false,
+                    'fallback_cb'    => false,
                 )
             );
             ?>
@@ -62,3 +57,5 @@ if ( ! defined( 'ABSPATH' ) ) {
     </div>
 
 </header>
+
+<main id="primary" class="site-main">
