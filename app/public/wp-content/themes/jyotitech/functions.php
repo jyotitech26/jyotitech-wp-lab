@@ -52,3 +52,18 @@ function jyotitech_enqueue_styles() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'jyotitech_enqueue_styles' );
+
+/**
+ * Enqueue theme JavaScript.
+ */
+function jyotitech_enqueue_scripts() {
+
+    wp_enqueue_script(
+        'jyotitech-script',
+        get_template_directory_uri() . '/assets.js',
+        array(),
+        '1.0.0',
+        true
+    );
+}
+add_action( 'wp_enqueue_scripts', 'jyotitech_enqueue_scripts' );
